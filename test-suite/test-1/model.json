@@ -1,0 +1,28 @@
+{
+    "$interface-name":"test_1",
+    "$lang":"c++",
+    "$base":"../../../test-suite/test-1/",
+    "headers":["iostream","cstdlib"],
+    "symbols":{
+        "banana":{
+            "stype":"variable",
+            "default":"10"
+        },
+        "sasha":{
+            "stype":"function"
+        },
+        "ReoNA":{
+            "stype":"function",
+            "rets":["std::string",{"type":"int","optional":true}],
+            "args":["std::string",{"type":"int","optional":true}],
+            "rets-pack":"tuple",
+            "args-pack":"tuple",
+            "default": "return {\"\",{10}};"
+        }
+    },
+    "constructor":"sasha",
+    "destructor":"sasha",
+    "tail":{
+        "inline":"int main(int argc, const char* argv[]){test_1 h(argv[1]);std::cout<<\"Value is:\"<<h.banana()<<\"\\n\\n\";return 0;}"
+    }
+}

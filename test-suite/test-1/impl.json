@@ -1,0 +1,10 @@
+{
+    "$lang":"c++",
+    "$base":"../../../test-suite/test-1/",
+    "source":"model.json",
+    "headers":["iostream","cstdlib"],
+    "impl":{
+        "banana":"100",
+        "sasha":"return;"
+    }
+}
