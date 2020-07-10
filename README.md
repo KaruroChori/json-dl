@@ -1,6 +1,6 @@
 # Introduction
 Designing self modyfing code or at least code which can be hot-plugged in our applications is very simple for interpreted languages but quite harder in the case of compiled ones.
-The most common technique is to generate the mutable code, compile and link it a library, and to load it from the final application, providing all the bindings to the different symbols.
+The most common technique is to generate the code, compile and link it as a library, and to load it in the final application, providing all the bindings to the symbols we specified.
 This process can be quite annoying, it is easy to introduce mistakes and it is hard to enforce that the interface is exactly the same between the host code and the dynamic library.
 
 This repository contains a small set of utilities to automatize most of this process and the specifications for two JSON format introduced to represent the interface and its implementation.
